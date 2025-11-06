@@ -3,7 +3,6 @@ class ExerciseEntriesController < ApplicationController
 
   def new
     @entry = ExerciseEntry.new
-     @recent_exercise_entries = current_user.exercise_entries.recent
   end
 
   def create

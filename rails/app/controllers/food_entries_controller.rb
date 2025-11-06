@@ -3,7 +3,6 @@ class FoodEntriesController < ApplicationController
 
   def new
     @entry = FoodEntry.new
-    @recent_food_entries = current_user.food_entries.recent
   end
 
   def create
@@ -35,4 +34,3 @@ class FoodEntriesController < ApplicationController
       .merge(user: current_user)
   end
 end
-
